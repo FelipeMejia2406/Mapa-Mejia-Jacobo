@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mapa interactivo de San Pedro de Macorís con ubicación del Mejia Jacobo Food Truck.">
+    <meta name="keywords" content="San Pedro de Macorís, mapa, Mejia JAcobo Food Truck, ubicación, República Dominicana">
+    <meta name="author" content="Tu Nombre o Empresa">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="tu_codigo_de_verificacion">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mapa San Pedro de Macorís">
+    <meta name="twitter:description" content="Explora el mapa interactivo de San Pedro de Macorís y encuentra el Mejia Jacobo Food Truck.">
+    <meta name="twitter:image" content="https://example.com/tu_imagen.jpg">
+    <meta property="og:title" content="Mapa San Pedro de Macorís">
+    
+    <title>Mapa San Pedro de Macorís</title>
+    <meta property="og:description" content="Explora el mapa interactivo de San Pedro de Macorís y encuentra el Mejia Jacobo Food Truck.">
+    <meta property="og:image" content="https://example.com/tu_imagen.jpg">
+    <meta property="og:url" content="https://example.com/mapa_san_pedro_de_macoris.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mapa San Pedro de Macorís">
+    <meta property="og:locale" content="es_ES">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+
+
+
+
+    <link rel="icon" href="img/Imagen de WhatsApp 2025-06-16 a las 18.15.09_6cdd3752.jpg" type="image/x-icon">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                 #map {
+    width: 100vw;
+    height: 100vh;
+  }
+                #map_707eb549b25d2694b75c758497bcece3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                color: #333;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 1.42857143;
+            }
+            .icon 
+
+            {
+                border-radius: 0%;
+                width: 20px;
+                height: 20px;
+                background-size: cover;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_707eb549b25d2694b75c758497bcece3" ></div>
+        
+</body>
+<script>
+    navigator.geolocation.getCurrentPosition(function(position) {
+    // Aquí puedes usar position.coords.latitude y position.coords.longitude
+    // para centrar el mapa o enviar la ubicación al servidor
+});
+    
+    
+            var map_707eb549b25d2694b75c758497bcece3 = L.map(
+                "map_707eb549b25d2694b75c758497bcece3",
+                {
+                    center: [18.463127, -69.304883],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9fba472637b2bbb0479cbbd5ede656cd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9fba472637b2bbb0479cbbd5ede656cd.addTo(map_707eb549b25d2694b75c758497bcece3);
+        
+    
+            var marker_6c0fc42ea85430eee69ed5c051369f59 = L.marker(
+                [18.463127, -69.304883],
+                {
+}
+            ).addTo(map_707eb549b25d2694b75c758497bcece3);
+        
+    
+        var popup_65f476336ca92efedcb752e8110adf90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c72bd39c2cbc0b4e92f69b8a2f95894 = $(`<div id="html_1c72bd39c2cbc0b4e92f69b8a2f95894" style="width: 100.0%; height: 100.0%;">Mejia Jacobo Food Truck 🍔</div>`)[0];
+                popup_65f476336ca92efedcb752e8110adf90.setContent(html_1c72bd39c2cbc0b4e92f69b8a2f95894);
+            
+        
+
+        marker_6c0fc42ea85430eee69ed5c051369f59.bindPopup(popup_65f476336ca92efedcb752e8110adf90)
+        ;
+
+        
+    
+</script>
+</html>
